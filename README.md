@@ -27,8 +27,9 @@ Antes de executar a aplicação, certifique-se de que tem as seguintes ferrament
 1. Clone este repositório:
 
 ```bash
-git clone <link-do-repositorio>
-cd <nome-do-repositorio>
+git clone https://github.com/PedroMagno11/Dados-Identificacao-de-Alvos-API.git DadosIdentificacaoDeAlvosAPI
+
+cd DadosIdentidicacaoDeAlvosAPI
 ```
 
 2. Instale as dependências listadas no arquivo `dependencias.txt`:
