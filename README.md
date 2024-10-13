@@ -9,9 +9,13 @@ Este projeto é uma API simples desenvolvida em Python usando Flask que responde
 
 Exemplo de resposta:
 ```json
-{
-  "tgt_id": 10003,
-  "tgt_type": "Destroyer"
+{ 
+  "tgt_id": 10001,
+  "tgt_posicao": {
+      "posX": 0,
+      "posY": 0
+  },
+  "tgt_type": "Fragata"
 }
 ```
 
@@ -59,9 +63,13 @@ GET http://localhost:5000/target
 A resposta será um objeto JSON no seguinte formato:
 
 ```json
-{
-  "tgt_id": 10003,
-  "tgt_type": "Destroyer"
+{ 
+  "tgt_id": 10001,
+  "tgt_posicao": {
+      "posX": 0,
+      "posY": 0
+  },
+  "tgt_type": "Fragata"
 }
 ```
 
