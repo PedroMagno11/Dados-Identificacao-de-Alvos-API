@@ -1,10 +1,10 @@
-from posicao import Posicao
+from position import Position
 
 class Target:
-    def __init__(self, tgt_id:int, tgt_type:str, tgt_posicao:Posicao):
+    def __init__(self, tgt_id:int, tgt_type:str, tgt_position:Position):
         self.tgt_id = tgt_id
         self.tgt_type = tgt_type
-        self.tgt_posicao = tgt_posicao
+        self.tgt_position = tgt_position
 
     def get_tgt_id(self):
         return self.tgt_id
