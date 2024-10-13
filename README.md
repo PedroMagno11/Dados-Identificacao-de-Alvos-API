@@ -41,8 +41,25 @@ cd DadosIdentidicacaoDeAlvosAPI
 ```bash
 pip install -r dependencias.txt
 ```
+## Docker
 
-## Executando a aplicação
+Este projeto também pode ser executado em um contâiner Docker. Certifique-se de ter o Docker instalado em sua máquina.
+
+### Construindo a imagem Docker
+
+Para construir a imagem Docker, execute o seguinte comando na raiz do projeto:
+
+```bash
+docker build -t dados-alvo-api .
+```
+### Executando a aplicação (Com Docker)
+```bash
+docker run -p 5000:5000 dados-alvo-api
+```
+
+O servidor será iniciado em `http://127.0.0.1:5000/`
+
+## Executando a aplicação (Sem docker)
 
 Para iniciar o servidor Flask, execute o seguinte comando:
 
@@ -58,6 +75,10 @@ Faça uma requisição GET para o seguinte endpoint:
 
 ```bash
 GET http://localhost:5000/target
+```
+ou 
+```
+GET http://127.0.0.1:5000/target
 ```
 
 A resposta será um objeto JSON no seguinte formato:
@@ -79,6 +100,7 @@ A resposta será um objeto JSON no seguinte formato:
 - **target.py**: É a classe de domínio da aplicação.
 - **preconfigured_data.py"**: Contém dados pré-cadastrados ao sistema.
 - **dependencias.txt**: Lista todas as dependências necessárias para rodar o projeto.
+- **Dockerfile**: Contém as instruções para construir a imagem Docker da aplicação.
 
 ## Autores
 - [Pedro Magno](https://github.com/pedromagno11)
