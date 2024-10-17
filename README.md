@@ -25,6 +25,7 @@ Antes de executar a aplicação, certifique-se de que tem as seguintes ferrament
 
 - Python 3.x
 - Pip (Python package manager)
+- Docker
 
 ## Instalação
 
